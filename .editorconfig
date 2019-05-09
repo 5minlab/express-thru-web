@@ -18,6 +18,6 @@ indent_size = 2
 [*.html]
 indent_size = 2
 
-[*.{css,scss}]
+[*.{css,scss,sass}]
 indent_size = 2
 

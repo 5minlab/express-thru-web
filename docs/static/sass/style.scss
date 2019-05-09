@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+body {
+	background-color: #000;
+}
+
+.site-content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+// screenshot
+.popup-gallery {
+  padding: 2em 0;
+}
+
+.screenshot-box {
+  padding: 10px;
+  display: block;
+
+  img {
+    // center align
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    //border: 3px solid #505050;
+    //border-radius: 5px;
+  }
+}
+@media screen and (min-width: 48em) {
+  .screenshot-box {
+    padding: 5px;
+  }
+}

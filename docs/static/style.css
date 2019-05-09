@@ -1,3 +1,40 @@
+.upper-case {
+  text-transform: uppercase; }
+
+.show-only-desktop {
+  display: none; }
+
+@media screen and (min-width: 35.5em) {
+  .show-only-desktop {
+    display: block; } }
+
+.show-only-mobile {
+  display: block; }
+
+@media screen and (min-width: 35.5em) {
+  .show-only-mobile {
+    display: none; } }
+
 body {
-	background-color: #555;
-}
+  background-color: #000; }
+
+.site-content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0; }
+
+.popup-gallery {
+  padding: 2em 0; }
+
+.screenshot-box {
+  padding: 10px;
+  display: block; }
+  .screenshot-box img {
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+@media screen and (min-width: 48em) {
+  .screenshot-box {
+    padding: 5px; } }
+
+/*# sourceMappingURL=style.css.map */
