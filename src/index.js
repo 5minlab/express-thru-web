@@ -37,7 +37,8 @@ app.get('/en/', (req, res) => render(req, res, 'en'));
 function render(req, res, locale) {
 	const detail = readDetailContent(locale);
 	const summary = readSummaryContent(locale);
-	res.render('index', { locals: { detail, summary } });
+	const hash = Date.now();
+	res.render('index', { locals: { detail, summary, hash } });
 }
 
 const port = 3000;
