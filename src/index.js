@@ -31,8 +31,8 @@ function readSummaryContent(locale) {
 }
 
 app.get('/', (req, res) => render(req, res, 'en'));
-app.get('/index-ko.html', (req, res) => render(req, res, 'ko'));
-app.get('/index-en.html', (req, res) => render(req, res, 'en'));
+app.get('/ko/', (req, res) => render(req, res, 'ko'));
+app.get('/en/', (req, res) => render(req, res, 'en'));
 
 function render(req, res, locale) {
 	const detail = readDetailContent(locale);

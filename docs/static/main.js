@@ -66,6 +66,6 @@ function getLanguage() {
 if (location.pathname == "/" || location.pathname == "index.html") {
 	var lang = getLanguage();
 	if (lang.startsWith('ko')) {
-		location.href = '/index-ko.html';
+		location.href = '/ko/';
 	}
 }
