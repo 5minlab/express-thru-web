@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .upper-case {
   text-transform: uppercase; }
 
@@ -16,12 +17,75 @@
     display: none; } }
 
 body {
-  background-color: #000; }
+  background-image: url("/static/img/background/background.png");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto 100%;
+  font-family: "NotoSans-Regular", "Montserrat", "NanumGothic", "나눔고딕", "NanumGothicWeb", ng, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif;
+  color: #fff; }
+
+div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, form, fieldset, p, button, input, textarea, select, a {
+  font-family: "NotoSans-Regular", "Montserrat", "NanumGothic", "나눔고딕", "NanumGothicWeb", ng, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "굴림", Gulim, Helvetica, sans-serif; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+li {
+  display: list-item; }
+
+p {
+  word-break: normal; }
+
+a,
+a:visited {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #fdc444; }
+
+a:hover {
+  /* link color? */
+  color: #fdc444; }
+
+header {
+  max-width: 750px;
+  margin: 50px auto;
+  padding: 0;
+  text-align: center; }
+  header h1 {
+    display: none; }
+  header img {
+    width: 40%; }
 
 .site-content {
   max-width: 750px;
   margin: 0 auto;
   padding: 0; }
+  .site-content img {
+    max-width: 100%; }
+  .site-content h2 {
+    text-align: center; }
+  .site-content p {
+    text-align: center; }
+
+.store-icon-group {
+  text-align: center; }
+  .store-icon-group .btn-store {
+    display: inline-block;
+    width: 200px;
+    padding: 0.5em; }
+  .store-icon-group img {
+    border: 2px solid #888;
+    border-radius: 10px; }
+  .store-icon-group .not-supported {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none; }
+    .store-icon-group .not-supported img {
+      opacity: 0.3; }
 
 .popup-gallery {
   padding: 2em 0; }
@@ -36,5 +100,27 @@ body {
 @media screen and (min-width: 48em) {
   .screenshot-box {
     padding: 5px; } }
+
+.footer {
+  margin: 60px 0;
+  text-align: center; }
+  .footer ul, .footer ol {
+    list-style-type: none; }
+
+.footer-head li {
+  font-size: 1em;
+  padding: 0.3em 0;
+  color: #fff; }
+
+.footer-tail {
+  width: 100%; }
+
+.footer-tail small {
+  font-size: 90%; }
+
+.footer-tail img {
+  margin: 0 auto;
+  max-width: 120px;
+  width: 30%; }
 
 /*# sourceMappingURL=style.css.map */
