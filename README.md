@@ -9,4 +9,6 @@ npm run start
 
 # start watch
 npm run start:watch
+
+./build.sh
 ```
